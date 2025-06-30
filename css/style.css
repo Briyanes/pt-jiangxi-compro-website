@@ -502,12 +502,15 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        padding: 0 15px; /* Adjust nav padding for smaller screens */
+        padding: 0 10px; /* Re-add a small padding, but ensure logo fits */
+        justify-content: space-between; /* Keep space-between for logo and hamburger */
     }
 
     .logo img {
-        height: 40px; /* Slightly smaller logo on mobile */
-        max-width: 150px; /* Ensure logo doesn't overflow */
+        height: 30px; /* Even smaller logo on mobile */
+        max-width: 100px; /* Ensure logo doesn't overflow */
+        width: 100%; /* Make it responsive within its max-width */
+        flex-shrink: 0; /* Prevent logo from shrinking */
     }
 
     .nav-links {
@@ -516,7 +519,7 @@ footer {
         width: 100%;
         background-color: #1A2B5B;
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 50px; /* Adjust based on new header height */
         left: 0;
         padding: 20px 0;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -589,5 +592,46 @@ footer {
     .timeline-item .year-bubble {
         left: 0;
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 5px; /* Keep minimal padding */
+        overflow: hidden; /* Hide overflowing content */
+    }
+
+    .logo {
+        width: 10px; /* Further reduce fixed width for the logo container */
+        flex-shrink: 0; /* Prevent logo from shrinking */
+        text-align: left; /* Align logo to the left */
+    }
+
+    .logo img {
+        width: 100%; /* Make image fill its container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure it behaves as a block element */
+    }
+
+    .hamburger-menu {
+        width: 30px; /* Keep hamburger size */
+        height: 30px; /* Keep hamburger size */
+        margin-left: auto; /* Push hamburger to the right */
+    }
+
+    .hero-content h1 {
+        font-size: 0.35rem; /* Further reduce font size for hero title */
+    }
+
+    .hero-content p {
+        font-size: 0.01rem; /* Further reduce font size for hero subtitle */
+    }
+
+    section {
+        padding: 5px 5px; /* Keep section padding */
+    }
+
+    section h2 {
+        font-size: 0.35rem; /* Even smaller section title font size */
     }
 }
