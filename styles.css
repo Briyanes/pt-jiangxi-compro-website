@@ -838,6 +838,30 @@ section {
 .contact-details p {
     color: var(--secondary-gray);
     line-height: 1.6;
+    word-break: break-word; /* Ensure long words break to prevent overflow */
+}
+
+@media (max-width: 768px) {
+    .contact-item {
+        align-items: flex-start; /* Ensure alignment is correct */
+    }
+    .contact-icon {
+        flex-shrink: 0; /* Prevent icon from shrinking */
+    }
+    .contact-details {
+        flex-grow: 1; /* Allow details to take available space */
+    }
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+        padding: 0 var(--space-4);
+    }
+    .contact-info {
+        padding: var(--space-6);
+    }
+    .contact-form {
+        padding: var(--space-8);
+    }
 }
 
 /* Contact Form */
