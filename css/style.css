@@ -416,40 +416,6 @@ section h2::after {
 
 
 
-/* Workflow Section */
-.workflow-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.step-item {
-    background-color: #f4f4f4;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.step-item:hover {
-    transform: translateY(-10px);
-}
-
-.step-item img {
-    height: 80px;
-    margin-bottom: 20px;
-}
-
-.step-item h3 {
-    color: #1A2B5B;
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.step-item p {
-    font-size: 1rem;
-    color: #555;
-}
 
 /* Footer */
 footer {
