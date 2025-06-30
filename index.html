@@ -3,231 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama Perusahaan – Slogan Perusahaan</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Tambahkan link font eksternal jika diperlukan, contoh:
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    -->
+    <meta name="description" content="Company Profile - Solusi terpercaya untuk kebutuhan bisnis Anda">
+    <meta name="keywords" content="company profile, bisnis, layanan, produk, energi terbarukan, hidro energi, PLTA, PLTMH">
+    <meta name="author" content="PT. Energi Persada">
+    <title>PT. Energi Persada - Solusi Energi Terbarukan</title>
+    <!-- External Resources -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo Perusahaan">
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Company Logo">
+                </div>
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Proyek Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-            <button class="hamburger-menu" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#recent-projects">Proyek Kami</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero-section">
-        <video autoplay muted loop id="hero-video">
-            <source src="videos/hero-background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-content">
-            <h1>PT. Jiangxi Compro Indonesia</h1>
-            <p>Solusi Energi Terbarukan untuk Masa Depan Indonesia</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Lihat Proyek Kami</a>
-                <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- Text Content -->
+                <div class="hero-text">
+                    <h1 class="hero-title">Solusi Energi Bersih dan Berkelanjutan untuk Indonesia</h1>
+                    <p class="hero-subtitle">Kami adalah perusahaan nasional yang bergerak di bidang pengembangan dan pemanfaatan energi terbarukan, khususnya energi hidro (Hydro Energy). Kami berdedikasi untuk menghadirkan solusi energi bersih, berkelanjutan, dan ramah lingkungan melalui pemanfaatan potensi air di berbagai wilayah Indonesia.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Lihat Proyek Kami</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+                    </div>
+                </div>
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="images/hero-image.jpg" alt="Bendungan/Turbin Air">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about-section">
-        <h2>Tentang Kami</h2>
-        <p>Dengan senang hati kami memperkenalkan perusahaan yang didirikan di Karawang, Jawa Barat, Indonesia; dengan kegiatan utamanya di bidang Energi dan Pembangkit Listrik. Keberhasilan kami disebabkan oleh kekuatan staf manajerial dan teknis kami yang sangat berkualitas, pengalaman yang beragam, dan peralatan yang memadai. Kami akan sangat berterima kasih jika diberi kesempatan untuk menunjukkan kemampuan kami melalui kerja sama dengan Anda dalam waktu dekat.</p>
-        <h3>Visi</h3>
-        <p>Mencapai pertumbuhan perusahaan di masa depan dengan mengenali potensi untuk menghasilkan listrik berkualitas, melaksanakan proyek dengan sempurna, dan membangun hubungan saling percaya dengan para pemangku kepentingan.</p>
-        <h3>Misi</h3>
-        <p>Nilai-nilai yang kami junjung tercermin dalam cara kami berbisnis dengan saling percaya. Kami sangat menghargai pemangku kepentingan lingkungan, akuntabilitas dalam mencapai tujuan bersama. Kami berkomitmen untuk menjaga konsistensi, integritas profesional, dan standar etika kerja yang tinggi dalam semua pekerjaan kami. Kami menjunjung tinggi prinsip kejujuran, keadilan, saling menghormati, dan keselamatan.</p>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>Tahun Berdiri</h3>
-                <p>2012</p>
+        <section id="about" class="about">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="section-subtitle">Menjadi penyedia energi terbarukan terkemuka di Indonesia</p>
+                </div>
+                <!-- About Content -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>PT. Energi Persada didirikan di Karawang, Jawa Barat, Indonesia, dengan kegiatan utama di bidang Energi dan Pembangkit Listrik. Keberhasilan kami didukung oleh kekuatan staf manajerial dan teknis yang sangat berkualitas, pengalaman yang beragam, dan peralatan modern.</p>
+                        <p>Kami menyediakan layanan menyeluruh mulai dari studi kelayakan, perencanaan, pembangunan hingga pengoperasian pembangkit listrik tenaga air (PLTA dan PLTMH). Kami percaya bahwa energi air bukan hanya sumber daya alam, tetapi juga peluang untuk membangun masa depan yang lebih hijau dan mandiri.</p>
+                        <blockquote class="company-quote">
+                            "Kami menyediakan spektrum layanan penuh untuk membantu organisasi bekerja lebih baik dan memberikan solusi listrik yang efisien serta menetapkan standar keunggulan dalam setiap proyek."
+                        </blockquote>
+                        <p>Visi kami adalah menjadi penyedia energi terbarukan terkemuka di Indonesia. Misi kami adalah mewujudkan pertumbuhan perusahaan di masa depan dengan mengenali potensi produksi listrik berkualitas, melaksanakan proyek tanpa cela, dan membangun hubungan saling percaya dengan para pemangku kepentingan.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-us.jpg" alt="Tim Perusahaan">
+                    </div>
+                </div>
+                <div class="team-section mt-8">
+                    <h3 class="text-center section-subtitle mb-6">Tim Manajemen Kami</h3>
+                    <div class="team-grid grid grid-2">
+                        <div class="team-member text-center">
+                            <h4>SEP (Sejahtera Energi Persada)</h4>
+                            <ul>
+                                <li>Dr. Ir. Agustinus Djoko Susanto, MM</li>
+                                <li>Herlina Handoko</li>
+                                <li>Johan Widjaja</li>
+                            </ul>
+                        </div>
+                        <div class="team-member text-center">
+                            <h4>JIANGXI</h4>
+                            <ul>
+                                <li>Dr. Ir. Agustinus Djoko Susanto, MM</li>
+                                <li>Oky Tanjung</li>
+                                <li>Rafellino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="stat-item">
-                <h3>Pengalaman Proyek</h3>
-                <p>Sejak 2012</p>
-            </div>
-            <div class="stat-item">
-                <h3>Proyek Masa Depan</h3>
-                <p>4+</p>
-            </div>
-            <div class="stat-item">
-                <h3>Status DPT PLN</h3>
-                <p>Lolos</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services-highlight" class="services-highlight-section">
-        <h2>Layanan Utama Kami</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <img src="icons/feasibility.png" alt="Studi Kelayakan">
-                <h3>Pembuatan Studi Kelayakan</h3>
-                <p>Analisis teknis, ekonomi, dan lingkungan untuk menentukan kelayakan proyek PLTA, PLTM atau PLTMH sebelum tahap pembangunan.</p>
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <!-- Stat Item 1 -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="2012">2012</h3>
+                            <p class="stat-label">Hadir sejak</p>
+                            <p class="stat-desc">Telah dipercaya lebih dari 12 tahun</p>
+                        </div>
+                    </div>
+                    <!-- Stat Item 2 -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="35">> 35</h3>
+                            <p class="stat-label">Instansi</p>
+                            <p class="stat-desc">Pendidikan, Kesehatan, & Industri</p>
+                        </div>
+                    </div>
+                    <!-- Stat Item 3 -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="50">> 50</h3>
+                            <p class="stat-label">Merek</p>
+                            <p class="stat-desc">Lokal & Internasional</p>
+                        </div>
+                    </div>
+                    <!-- Stat Item 4 -->
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-target="100">> 100</h3>
+                            <p class="stat-label">Aktivitas</p>
+                            <p class="stat-desc">Penjualan, Konsultasi, Uji Fungsi, Maintenance</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="service-item">
-                <img src="icons/design.png" alt="Perencanaan & Desain">
-                <h3>Perencanaan & Desain Teknik</h3>
-                <p>Perancangan teknis sistem pembangkit hidro mulai dari bendung, intake, pipa pesat, powerhouse hingga jaringan distribusi.</p>
-            </div>
-            <div class="service-item">
-                <img src="icons/construction.png" alt="Pembangunan Pembangkit">
-                <h3>Pembangunan Pembangkit (EPC)</h3>
-                <p>Layanan pembangunan menyeluruh untuk proyek PLTA/PLTM/PLTMH, mulai dari konstruksi sipil, instalasi mekanikal hingga commissioning.</p>
-            </div>
-            <div class="service-item">
-                <img src="icons/maintenance.png" alt="Operasi & Pemeliharaan">
-                <h3>Operasi & Pemeliharaan (O&M)</h3>
-                <p>Pengelolaan dan perawatan pembangkit secara rutin agar beroperasi optimal dan berkelanjutan.</p>
-            </div>
-            <div class="service-item">
-                <img src="icons/legal.png" alt="Pengurusan Perizinan">
-                <h3>Pengurusan Perizinan & Dokumen Teknis</h3>
-                <p>Dukungan lengkap dalam pengurusan dokumen perizinan (Izin Lingkungan, UKL-UPL, PKKPR, dan lainnya) sesuai regulasi pemerintah.</p>
-            </div>
-            <div class="service-item">
-                <img src="icons/consultation.png" alt="Konsultasi Energi Terbarukan">
-                <h3>Konsultasi Energi Terbarukan</h3>
-                <p>Solusi konsultasi dan supervisi untuk proyek-proyek energi terbarukan, khususnya di sektor air.</p>
-            </div>
-            <div class="service-item">
-                <img src="icons/training.png" alt="Lembaga Trainer">
-                <h3>Lembaga Trainer/Pelatihan di Bidang Energi</h3>
-                <p>Layanan untuk Lembaga trainer atau pelatihan untuk bidang energi terbaru dan pengembangan pembangkit listrik tenaga air.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="project-experience" class="project-experience-section">
-        <h2>PENGALAMAN PROYEK</h2>
-        <div class="timeline-grid">
-            <div class="timeline-item">
-                <div class="year-bubble">2012</div>
-                <h3>PLTM Lebong (3x4 MW) (COD 2012)</h3>
-                <h3>PLTM Tunggang (3x3.33 MW (COD 2021)</h3>
-                <ul>
-                    <li>Proses Perizinan hingga PJBL dengan PT. PLN (Persero), Pengawasan Konstruksi dan pengembangan Operasi dan Pemeliharaan Pembangkit Listrik Tenaga Air Lebong (3 x 4 MW), Lebong, Bengkulu. PT. Mega Power Mandiri. (COD 2012)</li>
-                    <li>Perizinan hingga PJBL dengan PT. PLN (Persero), Pembebasan Lahan, Perencanaan dan Pengembangan Konstruksi Pembangkit Listrik Tenaga Air Tunggang 3 x 3.33 MW, Lebong, Bengkulu. PT. Mega Hydro Energy (COD 2021)</li>
-                </ul>
+        <section id="services" class="services">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Layanan Kami</h2>
+                    <p class="section-subtitle">Solusi lengkap untuk kebutuhan bisnis Anda di bidang energi terbarukan</p>
+                </div>
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-1.jpg" alt="Pembuatan Studi Kelayakan">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Pembuatan Studi Kelayakan (Pra FS & FS)</h3>
+                            <p class="service-description">Analisis teknis, ekonomi, dan lingkungan untuk menentukan kelayakan proyek PLTA, PLTM atau PLTMH sebelum tahap pembangunan.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-2.jpg" alt="Perizinan Legalitas">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Pengurusan Perizinan & Dokumen Teknis</h3>
+                            <p class="service-description">Dukungan lengkap dalam pengurusan dokumen perizinan (Izin Lingkungan, UKL-UPL, PKKPR, dan lainnya) sesuai regulasi pemerintah.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-3.jpg" alt="Pembangunan Pembangkit">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Pembangunan Pembangkit (EPC - PLTA/PLTMH)</h3>
+                            <p class="service-description">Layanan pembangunan menyeluruh untuk proyek PLTA/PLTM/PLTMH, mulai dari konstruksi sipil, instalasi mekanikal hingga commissioning.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-4.jpg" alt="Konsultasi dan Manajemen Energi">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Konsultasi & Manajemen Energi</h3>
+                            <p class="service-description">Solusi konsultasi dan supervisi untuk proyek-proyek energi terbarukan, khususnya di sektor air.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 5 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-5.jpg" alt="Operasional dan Pemeliharaan">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Operasional & Pemeliharaan (O&M)</h3>
+                            <p class="service-description">Pengelolaan dan perawatan pembangkit secara rutin agar beroperasi optimal dan berkelanjutan.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 6 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service-6.jpg" alt="Lembaga Trainer/Pelatihan">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Lembaga Trainer/Pelatihan di Bidang Energi</h3>
+                            <p class="service-description">Layanan untuk lembaga trainer atau pelatihan untuk bidang energi terbaru dan pengembangan pembangkit listrik tenaga air.</p>
+                            <a href="#contact" class="service-link">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="timeline-item">
-                <div class="year-bubble">2020</div>
-                <h3>Pra Feasibility Study hingga proses PPA untuk PLTMh Sengak (2 x 360 KW), (COD pada tahun 2020)</h3>
-                <ul>
-                    <li>Proses Perizinan hingga PJBL di PT. PLN (Persero), Studi Pra-Kelayakan hingga verifikasi Studi Kelayakan di PT. PLN (Persero), Desain Rekayasa, Topografi, Pembebasan Lahan, Konstruksi PLTMh Sengak (2 x 360 KW), Kepahiang, Bengkulu. PT. Tropisindo Sumber Energi (COD 2020)</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <div class="year-bubble">2022</div>
-                <h3>Pra Feasibility Study hingga proses PPA untuk PLTM Ketaun 3 (3x3.33 MW) (Dalam Konstruksi 2022 – Sekarang)</h3>
-                <ul>
-                    <li>Proses Perizinan hingga PPA, Studi Pra-Kelayakan, Pengukuran Topografi, Desain-Rekayasa, proses DPT di PT. PLN (Persero). Perizinan hingga PJBL dengan PT. PLN (Persero), Studi Kelayakan, Desain Awal, Pembebasan Lahan, DED, Data Keuangan di PT. PLN (Persero), Seleksi Kontraktor dan proyek pembiayaan, PLTM Ketaun 3x3.33 MW), (Dalam Konstruksi 2021 – Sekarang)</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <div class="year-bubble">2020-NOW</div>
-                <h3>Authorization Zhangjiajie Tiancheng Electromechanical</h3>
-                <ul>
-                    <li>Sebagai otorisasi di Indonesia dari Zhangjiajie Tiancheng Electromechanical Equipment Manufacturing CO, Ltd China</li>
-                    <li>No. TC-CA.201808.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="recent-projects" class="recent-projects-section">
-        <h2>Proyek Kami</h2>
-        <div class="project-highlight-grid">
-            <div class="project-item">
-                <img src="images/pltmh_matobat.jpg" alt="PLTMh Matobat">
-                <h3>PLTMh Matobat – 200 kW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Sinakak, Kecamatan Pagai Selatan, Kabupaten Kepulauan Mentawai, Provinsi Sumatera Barat</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 200 Kw</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), Izin Selesai, DED & Studi Kelayakan, Studi Jaringan, Siap PPA</p>
+        <section id="projects" class="products">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Proyek Kami</h2>
+                    <p class="section-subtitle">Menampilkan proyek yang telah atau sedang dikerjakan</p>
+                </div>
+                <!-- Projects Grid -->
+                <div class="products-grid">
+                    <!-- Project Card 1: PLTMh Matobat -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-a.jpg" alt="PLTMh Matobat">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTMh Matobat – 200 kW</h3>
+                            <p class="product-description">Desa Sinaka, Pagai Selatan, Kepulauan Mentawai – Sumatera Barat</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 200 Kwh</li>
+                                    <li>Status: Tahap PPA</li>
+                                    <li>Deskripsi: Pembangkit ini dirancang untuk menyuplai energi ke 3 desa terpencil dengan sistem PLTMH berbasis run-of-river, mengurangi ketergantungan pada PLTD.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2: PLTM Lubu 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-b.jpg" alt="PLTM Lubu 3">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTM Lubu 3 (2x2,5 Mw) – 5 MW</h3>
+                            <p class="product-description">Muara Sitabu village, Gunung Tuleh District, West Pasaman Regency</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 5 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), Project Permit, DED & Feasibility Study, Network Study/KKO & KKF, Environment Permit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3: PLTA Pearaja -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-c.jpg" alt="PLTA Pearaja">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTA Pearaja (4x7 MW) – 28 MW</h3>
+                            <p class="product-description">Village Pearaja, Garoga, North Tapanuli Regency, Province North Sumatra</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 28 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), DED & PraFeasibility Study</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4: PLTA Sebelat 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-d.jpg" alt="PLTA Sebelat 1">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTA Sebelat 1 (4x8 KW) – 32 MW</h3>
+                            <p class="product-description">Village Suka maju, Marga Sakti Sebela, North Bengkulu Regency, Province Bengkulu</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 32 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), Permit Finish, DED & Feasibility Study, Network Study</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 5: PLTM Garoga -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-e.jpg" alt="PLTM Garoga">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTM Garoga (4x 10 MW) – 40 MW</h3>
+                            <p class="product-description">Sibagading Village, Garoga District, North Tapanuli, North Sumatera Province</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 40 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), DED & PraFeasibility Study</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 6: PLTM Aek Nalas -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-f.jpg" alt="PLTM Aek Nalas">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTM Aek Nalas (2X2 MW) – 4 MW</h3>
+                            <p class="product-description">Sidagal, Kec. Siatas Barita, Kab. Tapanuli Utara, Provinsi Sumatera Utara</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 4 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), Permit Finish, DED & Feasibility Study, Network Study, Prepare to PPA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 7: PLTM Sebelat II -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product-g.jpg" alt="PLTM Sebelat II">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">PLTM Sebelat II (4X8.1 MW) – 32.4 MW</h3>
+                            <p class="product-description">Village Suka maju, Marga Sakti Sebela, North Bengkulu Regency, Province Bengkulu</p>
+                            <div class="product-features">
+                                <ul>
+                                    <li>Kapasitas: 32.4 MW</li>
+                                    <li>Status: DPT (PT. PLN (Persero)), Permit Finish, DED & Feasibility Study, Network Study</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-item">
-                <img src="images/plta_sebelat_ii.jpg" alt="PLTA Sebelat II">
-                <h3>PLTA Sebelat II – 32.4 MW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Suka Maju, Kecamatan Marga Sakti Sebela, Kabupaten Bengkulu Utara, Provinsi Bengkulu</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 32.4 MW</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), Izin Selesai, DED & Studi Kelayakan, Studi Jaringan, Siap PPA</p>
-            </div>
-            <div class="project-item">
-                <img src="images/pltm_lubu_3.jpg" alt="PLTM Lubu 3">
-                <h3>PLTM Lubu 3 – 5 MW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Muara Sitabu, Kecamatan Gunung Tuleh, Kabupaten Pasaman Barat</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 5 MW</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), Izin Proyek, DED & Studi Kelayakan, Studi Jaringan/KKO & KKF, Izin Lingkungan</p>
-            </div>
-            <div class="project-item">
-                <img src="images/plta_garoga.jpg" alt="PLTA Garoga">
-                <h3>PLTA Garoga – 40 MW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Sibagading, Kecamatan Garoga, Tapanuli Utara, Provinsi Sumatera Utara</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 40 MW</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), DED & Studi Pra-Kelayakan</p>
-            </div>
-            <div class="project-item">
-                <img src="images/plta_pearaja.jpg" alt="PLTA Pearaja">
-                <h3>PLTA Pearaja – 28 MW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Pearaja, Garoga, Kabupaten Tapanuli Utara, Provinsi Sumatera Utara</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 28 MW</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), DED & Studi Pra-Kelayakan</p>
-            </div>
-            <div class="project-item">
-                <img src="images/pltm_aek_nalas.jpg" alt="PLTM Aek Nalas">
-                <h3>PLTM Aek Nalas – 4 MW</h3>
-                <p><strong>Lokasi Proyek:</strong> Desa Sidagal, Kec. Siatas Barita, Kab. Tapanuli Utara, Provinsi Sumatera Utara</p>
-                <p><strong>Kapasitas Pembangkit:</strong> 4 MW</p>
-                <p><strong>Status Proyek:</strong> DPT (PT. PLN (Persero)), Izin Selesai, DED & Studi Kelayakan, Studi Jaringan, Siap PPA</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-
-
-
-
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Kontak Kami</h3>
-                <p>Alamat: Ruko Santorini KGV 2, Blok A1 No 6 Pinayungan, Karawang</p>
-                <p>Telepon: 082182686602</p>
-                <p>Email: djoko241061@Gmail.com, sejahteraenergipersada@zohomail.com</p>
-                <p>Nama: Dr.Ir. Agustinus Djoko Susanto, MM</p>
-                <p>Jam Operasional: 09:00 – 17:30</p>
-                <p><a href="https://maps.app.goo.gl/your-google-maps-link" target="_blank" style="color: white; text-decoration: underline;">Lokasi Kantor Google Maps</a></p>
+        <section id="contact" class="contact">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="section-subtitle">Siap membantu kebutuhan bisnis Anda</p>
+                </div>
+                <!-- Contact Content -->
+                <div class="contact-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Alamat</h4>
+                                <p>Ruko Santorini Komplek KGV 2 Blok A1 No 6, Pinayungan, Telukjambe Timur Karawang, Jawa Barat.41360</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telepon</h4>
+                                <p>+62 821 8268 6602</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>djoko241061@Gmail.com<br>sejahteraenergipersada@zohomail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Jam Operasional</h4>
+                                <p>Senin - Jumat: 09:00 - 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subjek</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Pilih subjek</option>
+                                    <option value="konsultasi">Konsultasi Bisnis</option>
+                                    <option value="produk">Informasi Produk</option>
+                                    <option value="layanan">Informasi Layanan</option>
+                                    <option value="kerjasama">Kerjasama</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="social-media">
-                <h3>Ikuti Kami</h3>
-                <a href="#" class="social-icon"><img src="icons/facebook.png" alt="Facebook"></a>
-                <a href="#" class="social-icon"><img src="icons/instagram.png" alt="Instagram"></a>
-                <!-- Tambahkan ikon media sosial lainnya -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Company Logo">
+                </div>
+                    <p class="footer-description">PT. Energi Persada adalah perusahaan terpercaya yang menyediakan solusi energi bersih dan berkelanjutan dengan komitmen penuh untuk kepuasan pelanggan.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#projects">Proyek Kami</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <!-- Services Links -->
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Studi Kelayakan</a></li>
+                        <li><a href="#">Perizinan Legalitas</a></li>
+                        <li><a href="#">Pembangunan Pembangkit</a></li>
+                        <li><a href="#">Konsultasi & Manajemen Energi</a></li>
+                        <li><a href="#">Operasional & Pemeliharaan</a></li>
+                        <li><a href="#">Lembaga Trainer/Pelatihan</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Ruko Santorini Komplek KGV 2 Blok A1 No 6, Pinayungan, Telukjambe Timur Karawang, Jawa Barat.41360</li>
+                        <li><i class="fas fa-phone"></i> +62 821 8268 6602</li>
+                        <li><i class="fas fa-envelope"></i> djoko241061@Gmail.com</li>
+                        <li><i class="fas fa-globe"></i> sejahteraenergipersada@zohomail.com</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 PT. Jiangxi Compro Indonesia. All rights reserved.</p>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 PT. Energi Persada. Semua hak dilindungi.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat & Ketentuan</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/nomor_whatsapp_anda" class="whatsapp-button" target="_blank" aria-label="WhatsApp">
-        <img src="icons/whatsapp.png" alt="WhatsApp Icon">
-    </a>
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
