@@ -259,6 +259,113 @@ section h2::after {
     color: #666;
 }
 
+/* Project Experience Section */
+.project-experience-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.project-experience-section h2 {
+    color: #1A2B5B;
+    margin-bottom: 60px;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    position: relative;
+    padding-top: 50px; /* Space for the timeline line */
+}
+
+.timeline-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+.timeline-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-item .year-bubble {
+    background-color: #1A2B5B;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.timeline-item h3 {
+    color: #1A2B5B;
+    font-size: 1.4rem;
+    margin-top: 50px; /* Space below the bubble */
+    margin-bottom: 15px;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item ul li {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item ul li::before {
+    content: '•';
+    color: #1A2B5B;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Responsive adjustments for timeline */
+@media (max-width: 768px) {
+    .timeline-grid::before {
+        left: 20px; /* Move timeline line to the left */
+        transform: translateX(0);
+    }
+
+    .timeline-item {
+        margin-left: 40px; /* Space for the line and bubble */
+    }
+
+    .timeline-item .year-bubble {
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
 /* Recent Projects Section */
 .recent-projects-section {
     background-color: white;
@@ -399,43 +506,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Partners Section */
-.partners-section {
-    background-color: #1A2B5B; /* Dark blue background */
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.partners-section h2 {
-    color: white; /* White text for the title */
-    margin-bottom: 20px;
-}
-
-.partners-section h2::after {
-    background-color: white; /* White underline for the title */
-}
-
-.partners-section p {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-}
-
-.partners-logo-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust gap as needed */
-}
-
-.partners-logo-grid img {
-    max-width: 100%; /* Ensure image fits within its container */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center the image if it's a single large one */
-}
 
 /* WhatsApp Floating Button */
 .whatsapp-button {
