@@ -906,6 +906,11 @@ section {
     .contact-content {
         grid-template-columns: 1fr;
         gap: var(--space-12);
+        /* Add horizontal padding to ensure content is not too close to edges */
+        padding: 0 var(--space-4); /* Inherit from container or define explicitly */
+    }
+    .contact-info {
+        padding: var(--space-6); /* Adjust padding for mobile */
     }
     .contact-form {
         padding: var(--space-8);
