@@ -307,83 +307,7 @@ section h2::after {
     color: #1A2B5B;
 }
 
-/* Products & Services Section */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
 
-.product-item {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.product-item:hover {
-    transform: translateY(-10px);
-}
-
-.product-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
-}
-
-.product-item h3 {
-    color: #1A2B5B;
-    font-size: 1.5rem;
-    margin: 20px 20px 10px 20px;
-}
-
-.product-item p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0 20px 20px 20px;
-}
-
-/* Facilities Section */
-.facility-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.facility-item {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.facility-item:hover {
-    transform: translateY(-10px);
-}
-
-.facility-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
-}
-
-.facility-item h3 {
-    color: #1A2B5B;
-    font-size: 1.5rem;
-    margin: 20px 20px 10px 20px;
-}
-
-.facility-item p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0 20px 20px 20px;
-}
 
 /* Workflow Section */
 .workflow-steps {
@@ -473,6 +397,44 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 20px;
     font-size: 0.9rem;
+}
+
+/* Partners Section */
+.partners-section {
+    background-color: #1A2B5B; /* Dark blue background */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.partners-section h2 {
+    color: white; /* White text for the title */
+    margin-bottom: 20px;
+}
+
+.partners-section h2::after {
+    background-color: white; /* White underline for the title */
+}
+
+.partners-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.partners-logo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap as needed */
+}
+
+.partners-logo-grid img {
+    max-width: 100%; /* Ensure image fits within its container */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image if it's a single large one */
 }
 
 /* WhatsApp Floating Button */
